@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        /* Add custom styles here */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('img/back.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #fff;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .left, .right {
+            display: flex;
+            align-items: center;
+        }
+
+        .left img {
+            width: 60px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .left:hover img {
+    filter: invert(8%); /* Change the image color on hover */
+}
+
+.left:hover div {
+    color: #bbaca9; /* Change the text color on hover */
+}
+
+        .navbar {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+
+        .navbar li a:hover {
+            text-decoration: underline;
+        }
+        .navbar li a:hover,li a.active{
+        text-decoration: underline;
+        color: rgb(51, 12, 176);
+    }
+
+        .container {
+            border: 2px solid #fff;
+            padding: 10px;
+            width: 50%;
+            margin: 30px auto;
+            border-radius: 15px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .form-group input {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: transparent;
+            color: #fff;
+        }
+
+        .form-group input::placeholder {
+            color: #fff;
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            background-color: #000;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-group button:hover {
+            background-color: #312ec5;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+    
+/* Add this CSS to your stylesheet */
+.btn {
+    background-color: #f1e0e0;
+    color: rgb(3, 9, 13);
+    /* border-radius: 10px; */
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add transition for smooth effect */
+}
+
+.btn:hover {
+    background-color: rgb(35, 97, 50); /* Change background color on hover */
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/dumbbell.webp" alt="Fitness Logo">
+            <div>Fitness</div>
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="home">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="contact">Contact us</a></li>
+                <li><a href="read">Read</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join the best gym in NIT jalandhar now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
